@@ -2,7 +2,7 @@
 export function Footer() {
   return (
     <footer>
-        <h1>happy 14</h1>
+        <h1>FOOTER</h1>
     </footer>
   )
 }
