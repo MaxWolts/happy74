@@ -1,0 +1,19 @@
+.itemContainer {
+  border-radius: 10px;
+  position: relative;
+  height: 260px;
+  width: 260px;
+  overflow: hidden;
+  transition: box-shadow .1s linear, transform .1s linear;
+}
+
+.itemContainer:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 10px 10px 0px 0px var(--pink);
+  -webkit-box-shadow: 10px 10px 0px 0px var(--pink);
+  -moz-box-shadow: 10px 10px 0px 0px var(--pink);
+}
+
+.itemContainer .itemImage {
+  object-fit: cover;
+}
