@@ -9,7 +9,15 @@ interface Props {
 export const Item = ({ name, img }: Props) => {
   return (
     <div className={styles.itemContainer}>
-      <Image src={img} alt="img of cloth without text" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className={styles.itemImage} />
+      <Image
+        src={img}
+        alt="img of cloth without text"
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className={styles.itemImage}
+        placeholder="blur"
+        blurDataURL="/clothes/loadImg.webp"
+      />
     </div>
   )
 };
