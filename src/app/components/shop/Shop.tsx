@@ -1,4 +1,5 @@
 import { Item } from "./Item";
+import styles from "./styles.module.css"
 
 interface Product {
   id: string;
@@ -26,7 +27,7 @@ export const Shop = async () => {
   const { products } = await getProducts();
 
   return (
-    <div>
+    <div className={styles.productsContainer}>
       {products.map((product: Product) => <Item key={product.id} name={product.title} img={product.image.src} />)}
     </div>
   )
