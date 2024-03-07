@@ -1,0 +1,50 @@
+.banner {
+  align-items: center;
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  display: flex;
+  height: 320px;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner span {
+  color: #161616;
+  background-color: #f9f9f9;
+  left: 0;
+  bottom: 0;
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: clamp(3rem, 9vw, 7rem);
+ text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.bannerImage img {
+  object-position: top;
+  object-fit: cover;
+}
+
+@media (min-width:610px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner span {
+    position: relative;
+    color: #f9f9f9;
+    background: none;
+  }
+}
